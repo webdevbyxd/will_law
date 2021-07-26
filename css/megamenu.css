@@ -1,0 +1,401 @@
+
+/* MEGAMENU STYLE
+=================================*/
+nav.menu .mega-menu-item.megamenu-fw {
+    position: static;
+}
+nav.menu .megamenu-fw .mega-submenu {
+    left: auto;
+}
+nav.menu .megamenu-content {
+    padding: 15px;
+    width: 100% !important;
+}
+nav.menu .megamenu-content .title{
+    margin-bottom: 0;
+    padding: 16px 0px 16px 20px;
+    border-bottom: 1px solid #eee;
+}
+nav.menu .mega-menu-item.megamenu-fw .mega-submenu {
+    left: 0;
+    right: 0;
+}
+
+nav.menu{
+    float: right;
+    margin-bottom: 0;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    border: none;
+    z-index: 9;
+}
+ul.mega-submenu {
+    position: absolute;
+    top: auto;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+nav.menu ul.nav > li{
+    position: relative;
+    display: inline-block;
+    line-height: normal;
+}
+nav.menu ul.nav > li > a{
+    font-family: "Poppins",Arial,Helvetica,sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 16px;
+    line-height: 20px;
+}
+nav.menu ul.nav .mega-submenu .mega-submenu{
+    top: 0;
+    left: 100%;
+}
+nav.menu ul.nav li:nth-last-child(2) > ul.mega-submenu {
+    right: 0;
+    left: auto;
+}
+ul.menu-col{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+ul.menu-col li a{
+    color: #6f6f6f;
+}
+ul.menu-col li a:hover,
+ul.menu-col li a:focus{
+    text-decoration: none;
+}
+
+
+/* Responsive
+=================================*/
+
+@media (min-width: 1200px) {
+
+    nav.menu ul.nav .mega-submenu .mega-submenu{
+        margin-top: -2px;
+    }
+    nav.menu ul.nav-right .mega-submenu .mega-submenu{
+        left: -200px;
+    }
+    nav.menu ul.nav > li > a{
+        display: block;
+        margin: 0px;
+        padding: 0px 18px 0px 18px;
+        text-decoration: none;
+        position: relative;
+        z-index: 1;
+        height: 102px;
+        line-height: 102px;
+    }
+    nav.menu li.mega-menu-item{ position: relative; }
+    nav.menu li.mega-menu-item ul.mega-submenu{
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -o-border-radius: 0px;
+        border-radius: 0px;
+        padding: 0;
+        width: 250px;
+        background: #fff;
+        border: 0;
+        border-top: solid 3px;
+        box-shadow: 0 3px 25px 0px rgba(0,0,0,.07), 0 0 0 rgba(0,0,0,.10) inset;
+        transition: all .2s ease;
+        z-index: 99;
+    }
+    nav.menu li.mega-menu-item ul.mega-submenu > li a:hover,
+    nav.menu li.mega-menu-item ul.mega-submenu > li a:hover{
+        background-color: transparent;
+    }
+    nav.menu li.mega-menu-item ul.mega-submenu li a{
+        display: block;
+        padding: 10px 15px;
+        border-bottom: solid 1px #eee;
+    }
+    nav.menu li.mega-menu-item ul.mega-submenu > li:last-child > a,
+    nav.menu li.mega-menu-item ul.mega-submenu .menu-col li:last-child > a{
+        border-bottom: none;
+    }
+    nav.menu ul-right li.mega-menu-item ul.mega-submenu li a{
+        text-align: right;
+    }
+    nav.menu li.mega-menu-item ul.mega-submenu li.mega-menu-item > a.mega-menu-link:before{
+        font-family: 'FontAwesome';
+        float: right;
+        content: "\f105";
+        margin-top: 0;
+    }
+    nav.menu ul-right li.mega-menu-item ul.mega-submenu li.mega-menu-item > a.mega-menu-link:before{
+        font-family: 'FontAwesome';
+        float: left;
+        content: "\f104";
+        margin-top: 0;
+    }
+    nav.menu li.mega-menu-item ul.mega-submenu ul.mega-submenu{
+        top: -3px;
+    }
+    nav.menu ul.mega-submenu.megamenu-content{
+        padding: 0 15px !important;
+    }
+    nav.menu ul.mega-submenu.megamenu-content.tabbed{
+        padding: 0;
+    }
+    nav.menu ul.mega-submenu.megamenu-content.tabbed > li{
+        padding: 0;
+    }
+    nav.menu ul.mega-submenu.megamenu-content .col-menu{
+        padding: 0 30px;
+        margin: 0 -0.5px;
+        border-left: solid 1px #f0f0f0;
+        border-right: solid 1px #f0f0f0;
+        margin-top: 0;
+        padding: 0;
+    }
+    nav.menu ul.mega-submenu.megamenu-content .col-menu:first-child{
+        border-left: none;
+    }
+    nav.menu ul.mega-submenu.megamenu-content .col-menu:last-child{
+        border-right: none;
+    }
+    nav.menu ul.mega-submenu.megamenu-content .content{
+        display: none;
+    }
+    nav.menu li.mega-menu-item.on ul.mega-submenu.megamenu-content .content{
+        display: block !important;
+        height: auto !important;
+    }
+    
+}
+
+
+@media (max-width: 1200px) {
+
+    .ttm-menu-toggle {
+        position: relative;
+        height: 98px;
+        width: 28px;
+        float: left;
+    }
+    .ttm-menu-toggle label {
+        cursor: pointer;
+        position: relative;
+        z-index: 99;
+        height: 100%;
+        width: 100%;
+        padding: 42px 0;
+        margin : 0;
+    }
+    .ttm-menu-toggle .toggle-block {
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        padding: 0;
+        background-color: #262626;
+    }
+    .ttm-menu-toggle .toggle-blocks-1 {
+        position: relative;
+        float: left;
+    }
+    .ttm-menu-toggle .toggle-blocks-2 {
+        position: relative;
+        float: left;
+        margin-top: 6px;
+    }
+    .ttm-menu-toggle .toggle-blocks-3 {
+        position: relative;
+        float: left;
+        margin-top: 6px;
+    }
+    .ttm-menu-toggle input[type=checkbox]:checked ~ .ttm-menu-toggle-block > .toggle-blocks-2 { opacity: 0; }
+    .ttm-menu-toggle input[type=checkbox]:checked ~ .ttm-menu-toggle-block > .toggle-blocks-1 {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+        margin-top: 10px;
+    }
+    .ttm-menu-toggle input[type=checkbox]:checked ~ .ttm-menu-toggle-block > .toggle-blocks-3 {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+        margin-top: -10px;
+    }
+    #site-header-menu #site-navigation .menu > ul ul > li.active > a, #site-header-menu #site-navigation .menu > ul ul > li:hover > a {
+        background-color: transparent;
+        color: #B04132;
+    }
+    nav.menu.active {
+        display: block;
+        max-height: 10000px;
+        width: 100%;
+    }
+    nav.menu{
+        display: none ;
+        max-height: 10000px;
+        position: absolute;
+        box-shadow: rgba(0,0,0,0.12) 3px 3px 15px;
+        z-index: 100;
+        width: 100%;
+        top: 100%;
+        background-color: #fff;
+        border-top: 3px solid;
+    }
+    nav.menu.show{
+        display: block;
+        max-height: 10000px;
+        width: 100%;
+    }
+    #site-header-menu .site-navigation .menu > ul {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin: 0;
+    }
+    nav.menu ul.nav, nav.menu ul.nav > li{ 
+        display: block;
+    }
+    nav.menu li.mega-menu-item a.mega-menu-link:before{
+        font-family: 'FontAwesome';
+        content: "\f105";
+        float: right;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    nav.menu li.mega-menu-item.on > a.mega-menu-link:before{
+        content: "\f107";
+    }
+    nav.menu ul.nav > li > a{
+        display: block;
+        width: 100%;
+        border-bottom: solid 1px #e0e0e0;
+        padding: 10px 0;
+        border-top: solid 1px #e0e0e0;
+        margin-bottom: -1px;
+    }
+    nav.menu ul.nav > li:first-child > a{
+        border-top: none;
+    }
+    nav.menu ul.nav-left > li:last-child > ul.mega-submenu{
+        border-bottom: solid 1px #e0e0e0;
+    }
+    nav.menu ul.nav li.mega-menu-item li a.mega-menu-link{
+        float: none !important;
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+    nav.menu ul.nav li.mega-menu-item ul.mega-submenu{
+        width: 100%;
+        position: relative !important;
+        background-color: transparent;
+        float: none;
+        border: none;
+        padding: 0 0 0 15px !important;
+        margin: 0 0 -1px 0 !important;
+        -moz-box-shadow: 0px 0px 0px;
+        -webkit-box-shadow: 0px 0px 0px;
+        -o-box-shadow: 0px 0px 0px;
+        box-shadow: 0px 0px 0px;
+        -moz-border-radius: 0px 0px 0px;
+        -webkit-border-radius: 0px 0px 0px;
+        -o-border-radius: 0px 0px 0px;
+        border-radius: 0px 0px 0px;
+    }
+    nav.menu ul.nav li.mega-menu-item ul.mega-submenu  > li > a{
+        display: block;
+        width: 100%;
+        border-bottom: solid 1px #e0e0e0;
+        padding: 10px 0;
+    }
+    nav.menu ul.nav ul.mega-submenu li a:hover,
+    nav.menu ul.nav ul.mega-submenu li a:focus{
+        background-color: transparent;
+    }
+    nav.menu ul.nav ul.mega-submenu ul.mega-submenu{
+        float: none !important;
+        left: 0;
+        padding: 0 0 0 15px;
+        position: relative;
+        background: transparent;
+        width: 100%;
+    }
+    nav.menu ul.nav ul.mega-submenu li.mega-menu-item.on > ul.mega-submenu{
+        display: inline-block;
+        margin-top: -10px;
+    }
+    nav.menu li.mega-menu-item ul.mega-submenu li.mega-menu-item > a.mega-menu-link:after{
+        display: none;
+    }
+    nav.menu .mega-menu-item .megamenu-content .col-menu .title{
+        padding: 10px 15px 10px 0;
+        line-height: 24px;
+        text-transform: none;
+        font-weight: 400;
+        letter-spacing: 0px;
+        margin-bottom: 0;
+        cursor: pointer;
+        border-bottom: solid 1px #e0e0e0;
+    }
+    nav.menu .mega-menu-item .megamenu-content .col-menu ul > li > a{
+        display: block;
+        width: 100%;
+        border-bottom: solid 1px #e0e0e0;
+        padding: 8px 0;
+    }
+   nav.menu .mega-menu-item .megamenu-content .col-menu .title:before{
+        font-family: 'FontAwesome';
+        content: "\f105";
+        float: right;
+        font-size: 16px;
+        margin-left: 10px;
+       position: relative;
+       right: -15px;
+    }
+    nav.menu .mega-menu-item .megamenu-content .col-menu:last-child .title{
+        border-bottom: none;
+    }
+    nav.menu .mega-menu-item .megamenu-content .col-menu.on:last-child .title{
+        border-bottom: solid 1px #e0e0e0;
+    }
+    nav.menu .mega-menu-item .megamenu-content .col-menu:last-child ul.menu-col li:last-child a{
+        border-bottom: none;
+    }
+    nav.menu .mega-menu-item .megamenu-content .col-menu.on .title:before{
+        content: "\f107";
+    }
+    nav.menu .mega-menu-item .megamenu-content .col-menu .content{
+        padding: 0 0 0 15px;
+    }
+    nav.menu .megamenu-content{
+        padding: 0;
+    }
+    nav.menu .megamenu-content .col-menu{
+        padding-bottom: 0;
+    }
+    nav.menu .megamenu-content .title{
+        cursor: pointer;
+        display: block;
+        padding: 10px 15px;
+        margin-bottom: 0;
+        font-weight: normal;
+    }
+    nav.menu .megamenu-content .content{
+        display: none;
+    }
+}
